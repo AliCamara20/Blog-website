@@ -1,0 +1,474 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #eee;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+}
+
+img{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.container{
+    width: 90%;
+    max-width: 1300px;
+    margin:  0 auto;
+}
+
+header{
+    background-color: #000;
+    padding: 1em 0;
+    display: none;
+}
+
+.header{
+    text-align: center;
+    padding: 3em 0;
+}
+
+.header_text .header_two{
+    font-size: clamp(3rem, 0.875rem + 1vw, 5rem);
+}
+
+.header_desc{
+    font-size: 1rem;
+
+}
+
+.header h6 span{
+    background-color: black;
+    color: #fff;
+    padding: .1em .5em;
+    margin-left: .5em;
+}
+
+
+
+
+
+
+.blog p{
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.hero_text{
+    
+}
+
+.hero_text h1{
+    font-size: 6rem;
+    color: #fff;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+}
+
+.hero_text .name_tag{
+    font-size: 2rem;
+    
+
+}
+.fashion_tag{
+    display: none;
+    margin-top: .5em;
+}
+.subscribe_label{
+    display: inline-block;
+    margin-top: 3em;
+
+}
+.subscribe_label  button{
+    display: block;
+    padding: 1em .8em;
+    font-size: clamp(1rem , .875rem + 1vw, 1.5rem);
+    text-transform: uppercase;
+    background-color: rgb(255, 255, 255, .5);
+    border: none;
+    cursor: pointer;
+
+
+}
+
+.blogs-container{
+    background-color: #eee;
+    padding: 3em 0;
+}
+
+.blog-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.blog{
+    background-color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.blog + .blog{
+    margin-top: 2em;
+}
+
+.blog_img{
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.likeBtn{
+    padding: .3em 1em;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.replies{
+    background-color: #000;
+    color: #fff;
+}
+
+.rep-span{
+    background-color: #fff;
+    color: #000;
+    padding: 0 .7em;
+    margin-left: .3em;
+}
+
+.buttons button{
+    font-size: clamp(1rem, .875rem + 1vw, 2rem);
+    
+}
+
+.comments{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin:  0 auto;
+    row-gap: 50px;
+}
+
+
+
+.comment img{
+    width: 200px;
+    object-fit: cover;
+    aspect-ratio: 1/ 1.1;
+       
+}
+
+hr{
+    width: 100%;
+    margin: 3em  0;
+}
+
+.reply span{
+    margin-left: 1em;
+    opacity: .7;
+    
+}
+.intro{
+    display: grid;
+}
+
+.intro_img{
+    width: 100%;
+}
+.info{
+    background: black;
+    color: #fff;
+    padding: 1em;
+    
+}
+.info_name{
+    margin-top: 0;
+}
+
+.info_about{
+    line-height: 1.5;
+}
+
+.section_header{
+    background-color: black;
+    color: #fff;
+    padding: .5em 1em;
+    
+}
+ .section_title{
+    letter-spacing: 2px;
+ }
+.posts_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    column-gap: 20px ;
+    border-bottom: 1px solid #eee;
+}
+
+.post_item:hover{
+    background-color: #ccc;
+}
+
+.post_img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    
+}
+
+.post_title{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.post_body{
+    font-size: 1rem;
+    margin-top: 0;
+
+
+    
+}
+.posts, .adverts, .tags, .inspirations, .follow, .subscribe{
+    background-color: #fff;
+    margin-top: 2.5em;
+}
+
+.advert_section{ 
+    padding: 1em; 
+}
+
+.advert_box{
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 50vh;
+}
+.advert_box p{
+    font-size: clamp(1.1rem, .875rem + 1vw, 1.3rem);
+}
+
+.tag_box{
+   padding: 0 1em;
+}
+
+.tag{
+    background-color: #eee;
+    display: inline-block;
+    padding: .5em 1em;
+    margin: .5em 0;
+    font-size: .7rem;
+
+}
+
+.active{
+    background-color: black;
+    color: #fff;
+}
+.inspirations{
+    display: grid;
+    
+}
+.inspiration_imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1em;
+    gap: 10px;
+    
+    
+}
+.insp_img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+
+.follow_box{
+    padding: 1em;
+}
+.follow_box i{
+    font-size: 1.4rem;
+}
+.follow_box i:hover{
+    opacity: .7;
+}
+.follow_box i:not(i:first-child){
+    margin-left: .3em;
+}
+
+#subscription_form{
+    padding: 1em;
+}
+.sub_info{
+    font-size: 1rem;
+}
+
+
+#subscription_form input{
+   display: block;
+   width: 100%;
+   padding: .6em 1em;
+   margin-bottom: 1em;
+   border: 1px solid rgb(0, 0, 0, .2);
+   font-size: 1rem;
+}
+
+#subscription_form input[type = 'submit']{
+    background-color:#FF5733;
+    color: #fff;
+    border: none;
+}
+#subscription_form input[type = 'submit']:hover{
+    background-color: #eee;
+    color: #000;
+}
+
+footer {
+    background-color: #777;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+footer h4, footer a{
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+
+footer .top_box{
+    background-color: #000;
+    display: inline-block;
+    padding: 0 1em;
+    
+}
+.top_box a{
+    text-decoration: none;
+    display: block;
+    
+}
+
+.top_box a h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+.top_box a h4 svg{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    margin-right: .5em;
+}
+.sub-modalContainer{
+    background-color: rgb(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sub_form{
+    background-color: white;
+    animation: scaleUp .5s ease ;
+    
+}
+
+@keyframes scaleUp {
+    0%{
+        transform: scale(0);
+    }
+    50%{
+
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#close{
+    font-size: 2.5rem;
+    display: block;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (min-width: 800px){
+
+    .hero_text .name_tag{
+        font-size: 3rem;
+    }
+
+    .fashion_tag{   
+        display: block;
+    }
+
+    header{
+        display: block;
+    }
+    .nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+     .nav{
+        display: flex;
+     }
+    .nav .search{
+        margin-left: auto;  
+    }
+
+    .nav a{
+        display: block;
+    }
+
+     a +  a{
+        margin-left: 2em;
+    }
+    .comment{
+        display: flex;
+    }
+
+    .search{
+        margin-left: auto;
+    }
+
+    
+
+
+}
+
+ 
+
+ 
+

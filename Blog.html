@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="example.css">
+    <title>Blog Website</title>
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                <a href=""><i class="fa-brands fa-flickr"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="" class="search"><i class="fa-solid fa-search"></i></a>
+                
+            </nav> 
+        </div>
+        
+    </header>
+    <div class="header">
+        <div class="container header_text">
+          <h1 class="header_two">ALI BLOGLIFE</h1>
+          <h6 class="header_desc">Welcome to the blog of <span>Ali's World</span></h6>
+        </div>  
+        
+    </div>
+
+    <section class="hero">
+        <img src="hero.jpg" alt="" class="hero_img" width="100%" height="300px">
+        <div class="hero_text container" >
+            <h1 class="name_tag">Ali's</h1>
+            <h1  class="fashion_tag" >Fashion Blog</h1>
+            <h6 class="subscribe_label"><button class="subscribe_btn" onclick="openModal(event)">subscribe</button></h6>
+        </div>
+       
+    </section>
+    
+    <section class="blogs-container">
+        <div class="blog-container"></div>   
+    </section>
+    
+    <section class="intro container">
+        <img src="Chris-Williamson.jpeg" alt="" class="intro_img">
+        <div class="info" >
+            <h3 class="info_name">Chris</h3>
+            <p class="info_about">
+                Hi, I’m your go-to fashion enthusiast, blending timeless elegance with modern trends. 
+                Whether it’s styling tips, seasonal must-haves, or behind-the-scenes insights, 
+                I’m here to keep your wardrobe inspired. Join me on this stylish 
+                journey where every look tells a story!
+            </p>
+            </p>
+        </div>
+    </section>
+
+    <section class="posts container">
+            <div class="section_header">
+                <h4 class="section_title">Popular Posts</h4>       
+            </div>
+       
+            <ul class="posts_list">
+                <li class="post_item">
+                <img src="gucci (2).jpg" alt="" class="post_img">
+                <div class="post_info">
+                    <p class="post_title">Gucci</p>
+                    <p class="post_body">Lorem, ipsum.</p>
+                </div>
+                </li>
+                <li class="post_item">
+                <img src="hoodie.jpg" alt="" class="post_img">
+                <div class="post_info">
+                    <p class="post_title">Hoodie</p>
+                    <p class="post_body">Lorem, ipsum dolor.</p>
+                </div>
+                </li>
+                <li class="post_item">
+                <img src="Sneakers.jpg" alt="" class="post_img">
+                <div class="post_info">
+                    <p class="post_title">Sneakers</p>
+                    <p class="post_body">Lorem, ipsum dolor.</p>
+                </div>
+                </li>
+                <li class="post_item">
+                <img src="caps.jpg" alt="" class="post_img">
+                <div class="post_info">
+                    <p class="post_title">Caps</p>
+                    <p class="post_body">Lorem, ipsum dolor.</p>
+                </div>
+                </li>
+            </ul>
+    </section>
+
+    <section class="adverts container">
+        <div class="section_header">
+            <h4 class="section_title">Advertise</h4>       
+        </div>
+        <div class="advert_section">
+            <div class="advert_box">
+                <p>Your AD Here</p>           
+            </div>
+        </div>
+    </section>
+
+    <section class="tags  container">
+        <div class="section_header">
+            <h4 class="section_title">Tags</h4>       
+        </div>
+        <p class="tag_box">
+            <span class="active tag">Fashion</span>
+            <span class="tag">Briks</span>
+            <span class="tag">Hoodie</span>
+            <span class="tag">London</span>
+            <span class="tag">Sneakers</span>
+            <span class="tag">Ideas</span>
+            <span class="tag">News</span>
+            <span class="tag">Pants</span>
+            <span class="tag">Trends</span>
+            <span class="tag">Travel</span>
+            <span class="tag">Accessories</span>
+            <span class="tag">California</span>
+            <span class="tag">Caps</span>
+          
+        </p>
+    </section>
+
+    <section class="inspirations container">
+        <div class="section_header">
+            <h4 class="section_title">Inspirations</h4>       
+        </div>
+        <div class="inspiration_imgs">
+            <img src="insp_1.jpg" alt="" class="insp_img">
+            <img src="watch.jpg" alt="" class="insp_img">
+            <img src="insp_3.avif" alt="" class="insp_img">
+            <img src="accessories.jpg" alt="" class="insp_img">
+        </div>
+    </section>
+
+    <section class="follow container">
+        <div class="section_header">
+            <h4 class="section_title">Follow Me</h4>       
+        </div>
+        <div class="follow_box">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+
+    <section class=" subscribe container">
+        <div class="section_header">
+            <h4 class="section_title">Subscribe</h4>       
+        </div>
+        <form action="" id="subscription_form" onsubmit="openModal(event)">
+            <p class="sub_info">Enter your e-mail below to join an get notified on 
+                the latest blog posts
+            </p>
+            <input type="email" name="" id="">
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+    
+    <footer >
+        <div class="container">
+            <div class="top_box">
+                <a href="">
+                    <h4><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M450-160v-526L202-438l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg> To the top</h4>       
+                </a>
+            </div>
+    
+            <h4>Powered by <a href="">CSS</a></h4>
+        </div>
+        
+    </footer>
+
+    <div class="sub-modalContainer">
+        <div class="container">
+            <form action="" id="subscription_form" class="sub_form">
+                <div class="row">
+                    <h3>SUBSCRIBE</h3>
+                    <div id="close" onclick="closeModal()">&times;</div>
+                </div>
+                
+                <p class="sub_info">Enter your e-mail below to join an get notified on 
+                    the latest blog posts
+                </p>
+                <input type="email" name="" id="">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        
+    </div>
+
+
+    
+    <script src="Blog.js"></script>
+    
+</body>
+</html>
