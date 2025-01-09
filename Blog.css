@@ -62,8 +62,17 @@ header{
 }
 
 
-.hero_text{
-    
+.hero{
+    display: grid;
+    place-items: center;
+}
+
+.hero > *{
+    grid-row: 1/ -1;
+    grid-column: 1/ -1;
+}
+.hero_img{
+    width: 70vh;
 }
 
 .hero_text h1{
