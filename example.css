@@ -54,22 +54,24 @@ header{
     margin: 0;
 }
 .hero{
-    position: relative;
-    display: block;
+    display:grid;
+    place-items:center;
+}
+.hero > *{
+    grid-column: 1/ -1;
+    grid-row: 1/ -1;
 }
 .hero_img{
     width: 100%;
-    height: auto;
+    height: 80vh;
+    object-fit: cover;
 }
 
 
 
 
 .hero_text{
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
+   justify-self: flex-start;
 }
 
 .hero_text h1{
